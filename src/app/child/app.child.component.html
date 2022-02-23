@@ -1,0 +1,10 @@
+<div>
+    <p>hello, I am chlid.</p>
+    <p appHighlight="green">my parent data is{{ parentData }}</p>
+    <p appHighlight="green">my parent data1 is{{ parentData1 }}</p>
+    <input [(ngModel)]="childData" placeholder="请输入向父组件传的值" (keyup)="onKey($event)">
+    <button (click)="handleChildEmit()">click to parent</button>
+    <br/>
+    <input #phone (keyup)="null">
+    <p>{{ phone.value }}</p>
+</div>
